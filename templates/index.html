@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text to Speach</title>
+</head>
+<body>
+    <h1>Generate audio file from text input</h1>
+    <form action ="{{url_for('generate')}}" method="post">
+        <input type="text" name="text">
+        <button type="submit">Generate</button>
+    </form>
+</body>
+</html>
