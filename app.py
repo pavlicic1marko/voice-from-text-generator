@@ -12,8 +12,11 @@ def pronounce():
 
 
 root = Tk()
+root.title("Generate Audio")
 canvas = Canvas(root, width=400, height=300)
 canvas.pack()
+
+Label(text="text input").place(x=160, y=150)
 
 entry = Entry(root)
 canvas.create_window(200, 180, window=entry)
