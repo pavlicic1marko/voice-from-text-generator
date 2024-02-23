@@ -8,5 +8,12 @@ def index():
     return render_template("index.html")
 
 
+@app.route("/generate", methods=["POST"])
+def generate():
+    print("this is a test")
+    return render_template("index.html")
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)

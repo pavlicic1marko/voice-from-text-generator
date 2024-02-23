@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test</title>
+    <title>Text to Speach</title>
 </head>
 <body>
-<h1>Testinggg</h1>
+    <h1>Generate audio file from text input</h1>
+    <form action ="{{url_for('generate')}}" method="post">
+        <input type="text" name="text to create audio">
+        <button type="submit">Generate</button>
+    </form>
 </body>
 </html>
